@@ -10,44 +10,36 @@
     <div>
       <button open-type="getPhoneNumber" getphonenumber="getPhoneNumber"></button>
     </div>
-    <nut-toast :msg="msg" v-model:visible="show" :type="type" :cover="cover" />
+    <nut-toast :msg="state.msg" v-model:visible="state.show" :type="state.type" :cover="state.cover" />
   </view>
 </template>
 
-<script>
-import { reactive, toRefs } from 'vue';
-export default {
-  name: 'Index',
-  components: {
+<script lang="ts" setup>
+import { reactive, onMounted} from 'vue';
 
-  },
-  setup() {
-    const state = reactive({
-      msg: '欢迎使用 NutUI3.0 开发小程序',
-      msg2: '你成功了～',
-      type: 'text',
-      show: false,
-      cover: false
-    });
+const state = reactive({
+  msg: '欢迎使用 NutUI3.0 开发小程序',
+  msg2: '你成功了～',
+  type: 'text',
+  show: false,
+  cover: false
+});
 
-    const getPhoneNumber = (e) => {
-      console.log(e)
-    }
-
-
-    const handleClick = (type, msg, cover = false) => {
-      state.show = true;
-      state.msg2 = msg;
-      state.type = type;
-      state.cover = cover;
-    };
-
-    return {
-      ...toRefs(state),
-      handleClick
-    }
-  }
+const getPhoneNumber = () => {
+  console.log()
 }
+
+onMounted(() => {
+  getPhoneNumber()
+})
+
+const handleClick = (type, msg, cover = false) => {
+  state.show = true;
+  state.msg2 = msg;
+  state.type = type;
+  state.cover = cover;
+};
+
 </script>
 
 <style lang="scss">

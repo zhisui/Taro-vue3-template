@@ -250,7 +250,7 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/@vue/shared/dist/shared.esm-bundler.js");
@@ -275,7 +275,7 @@ var _createComponent = Object(_component_js__WEBPACK_IMPORTED_MODULE_4__[/* c */
   componentName = _createComponent.componentName,
   create = _createComponent.create;
 var _sfc_main = create({
-  components: Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({}, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"].name, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"]),
+  components: Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({}, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"].name, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"]),
   props: {
     color: String,
     shape: {
@@ -340,7 +340,7 @@ var _sfc_main = create({
     var classes = Object(vue__WEBPACK_IMPORTED_MODULE_2__[/* computed */ "f"])(function () {
       var _ref2;
       var prefixCls = componentName;
-      return _ref2 = {}, Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, prefixCls, true), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--").concat(type.value), type.value), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--").concat(size.value), size.value), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--").concat(shape.value), shape.value), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--plain"), plain.value), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--block"), block.value), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--disabled"), disabled.value), Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--loading"), loading.value), _ref2;
+      return _ref2 = {}, Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, prefixCls, true), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--").concat(type.value), type.value), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--").concat(size.value), size.value), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--").concat(shape.value), shape.value), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--plain"), plain.value), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--block"), block.value), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--disabled"), disabled.value), Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref2, "".concat(prefixCls, "--loading"), loading.value), _ref2;
     });
     var getStyle = Object(vue__WEBPACK_IMPORTED_MODULE_2__[/* computed */ "f"])(function () {
       var _a;
@@ -492,7 +492,7 @@ var _sfc_main = create({
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return index_taro; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/@vue/shared/dist/shared.esm-bundler.js");
@@ -516,7 +516,7 @@ var _sfc_main = create({
 var _createComponent = Object(_component_js__WEBPACK_IMPORTED_MODULE_4__[/* c */ "a"])("toast"),
   create = _createComponent.create;
 var _sfc_main = create({
-  components: Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({}, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"].name, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"]),
+  components: Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({}, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"].name, _Icon_js__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"]),
   props: {
     id: String,
     msg: String,
@@ -730,7 +730,7 @@ var index_taro = /* @__PURE__ */Object(_plugin_vue_export_helper_js__WEBPACK_IMP
 /* unused harmony export j */
 /* unused harmony export m */
 /* unused harmony export p */
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js");
 /* harmony import */ var _locale_lang__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../locale/lang */ "./node_modules/@nutui/nutui-taro/dist/packages/locale/lang/index.js");
 
@@ -745,7 +745,7 @@ var TypeOfFun = function TypeOfFun(value) {
   if (null === value) {
     return "null";
   }
-  var type = Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(value);
+  var type = Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(value);
   if ("undefined" === type || "string" === type) {
     return type;
   }
@@ -785,7 +785,7 @@ var isFunction = function isFunction(val) {
   return typeof val === "function";
 };
 var isObject = function isObject(val) {
-  return val !== null && Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(val) === "object";
+  return val !== null && Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(val) === "object";
 };
 var isPromise = function isPromise(val) {
   return isObject(val) && isFunction(val.then) && isFunction(val.catch);
@@ -892,8 +892,8 @@ function createComponent(name) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _export_sfc; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createForOfIteratorHelper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createForOfIteratorHelper */ "./node_modules/@babel/runtime/helpers/esm/createForOfIteratorHelper.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createForOfIteratorHelper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createForOfIteratorHelper */ "./node_modules/@babel/runtime/helpers/esm/createForOfIteratorHelper.js");
 
 
 /*!
@@ -903,11 +903,11 @@ function createComponent(name) {
 */
 var _export_sfc = function _export_sfc(sfc, props) {
   var target = sfc.__vccOpts || sfc;
-  var _iterator = Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createForOfIteratorHelper__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(props),
+  var _iterator = Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createForOfIteratorHelper__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(props),
     _step;
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var _step$value = Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_step.value, 2),
+      var _step$value = Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_step.value, 2),
         key = _step$value[0],
         val = _step$value[1];
       target[key] = val;
@@ -955,8 +955,8 @@ var pxCheck = function pxCheck(value) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BaseLang; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 
 
 /*!
@@ -964,8 +964,8 @@ var pxCheck = function pxCheck(value) {
 * (c) 2022 @jdf2e.
 * Released under the MIT License.
 */
-var BaseLang = /*#__PURE__*/Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(function BaseLang() {
-  Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, BaseLang);
+var BaseLang = /*#__PURE__*/Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(function BaseLang() {
+  Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, BaseLang);
 });
 
 
@@ -981,10 +981,10 @@ var BaseLang = /*#__PURE__*/Object(E_vue_demo_Taro_vue3_template_mini_app_node_m
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Lang; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
 /* harmony import */ var _baseLang_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./baseLang.js */ "./node_modules/@nutui/nutui-taro/dist/packages/locale/lang/baseLang.js");
 
 
@@ -997,11 +997,11 @@ var BaseLang = /*#__PURE__*/Object(E_vue_demo_Taro_vue3_template_mini_app_node_m
 */
 
 var Lang = /*#__PURE__*/function (_BaseLang) {
-  Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Lang, _BaseLang);
-  var _super = Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Lang);
+  Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Lang, _BaseLang);
+  var _super = Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Lang);
   function Lang() {
     var _this;
-    Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, Lang);
+    Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, Lang);
     _this = _super.apply(this, arguments);
     _this.save = "Save";
     _this.confirm = "Confirm";
@@ -1111,7 +1111,7 @@ var Lang = /*#__PURE__*/function (_BaseLang) {
     };
     return _this;
   }
-  return Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Lang);
+  return Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Lang);
 }(_baseLang_js__WEBPACK_IMPORTED_MODULE_4__[/* B */ "a"]);
 
 
@@ -1128,9 +1128,9 @@ var Lang = /*#__PURE__*/function (_BaseLang) {
 "use strict";
 /* unused harmony export Locale */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Locale; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js");
 /* harmony import */ var _zh_CN_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./zh-CN.js */ "./node_modules/@nutui/nutui-taro/dist/packages/locale/lang/zh-CN.js");
 /* harmony import */ var _en_US_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./en-US.js */ "./node_modules/@nutui/nutui-taro/dist/packages/locale/lang/en-US.js");
@@ -1148,7 +1148,7 @@ var Lang = /*#__PURE__*/function (_BaseLang) {
 
 
 var isObject = function isObject(val) {
-  return val !== null && Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(val) === "object";
+  return val !== null && Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(val) === "object";
 };
 var deepMerge = function deepMerge(target, newObj) {
   Object.keys(newObj).forEach(function (key) {
@@ -1168,9 +1168,9 @@ var langs = Object(vue__WEBPACK_IMPORTED_MODULE_3__[/* reactive */ "m"])({
 });
 var Locale = /*#__PURE__*/function () {
   function Locale() {
-    Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(this, Locale);
+    Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(this, Locale);
   }
-  Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Locale, null, [{
+  Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Locale, null, [{
     key: "languages",
     value: function languages() {
       return langs[this.currentLang.value];
@@ -1212,10 +1212,10 @@ Locale.currentLang = Object(vue__WEBPACK_IMPORTED_MODULE_3__[/* ref */ "n"])("zh
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Lang; });
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
 /* harmony import */ var _baseLang_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./baseLang.js */ "./node_modules/@nutui/nutui-taro/dist/packages/locale/lang/baseLang.js");
 
 
@@ -1228,11 +1228,11 @@ Locale.currentLang = Object(vue__WEBPACK_IMPORTED_MODULE_3__[/* ref */ "n"])("zh
 */
 
 var Lang = /*#__PURE__*/function (_BaseLang) {
-  Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Lang, _BaseLang);
-  var _super = Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Lang);
+  Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Lang, _BaseLang);
+  var _super = Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Lang);
   function Lang() {
     var _this;
-    Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, Lang);
+    Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, Lang);
     _this = _super.apply(this, arguments);
     _this.save = "\u4FDD\u5B58";
     _this.confirm = "\u786E\u8BA4";
@@ -1342,7 +1342,7 @@ var Lang = /*#__PURE__*/function (_BaseLang) {
     };
     return _this;
   }
-  return Object(E_vue_demo_Taro_vue3_template_mini_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Lang);
+  return Object(E_vue_demo_Taro_vue3_template_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Lang);
 }(_baseLang_js__WEBPACK_IMPORTED_MODULE_4__[/* B */ "a"]);
 
 
@@ -3163,7 +3163,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var config = {"pages":["pages/index/index"],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"}};
+var config = {"lazyCodeLoading":"requiredComponents","pages":["pages/index/index"],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"}};
 _tarojs_runtime__WEBPACK_IMPORTED_MODULE_2__["window"].__taroAppConfig = config
 var inst = App(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_2__["createVue3App"])(_node_modules_babel_loader_lib_index_js_app_ts__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], vue__WEBPACK_IMPORTED_MODULE_5__[/* h */ "r"], config))
 
