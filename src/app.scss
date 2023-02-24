@@ -1,0 +1,18 @@
+:root {
+    --nut-primary-color: green;
+    --nut-primary-color-end: #fa69;
+    --nut-help-color: #f5f5f5;
+}
+
+page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto,
+        'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+
+button {
+    color: green;
+    width: 100px;
+}

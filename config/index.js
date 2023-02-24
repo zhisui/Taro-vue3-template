@@ -1,3 +1,5 @@
+
+const path = require('path')
 const config = {
   projectName: 'mini-app',
   date: '2023-2-23',
@@ -13,6 +15,12 @@ const config = {
   plugins: ['@tarojs/plugin-html'],
   defineConstants: {
   },
+  alias: {
+    '@/api': path.resolve(__dirname, '..', 'src/api'),
+  },
+  plugins: [
+    'taro-plugin-pinia'
+  ]
   copy: {
     patterns: [
     ],

@@ -412,8 +412,8 @@ function genAttrMapFnFromDir(dir) {
   };
   return fn;
 }
-var inlineElements = new Set(["i", "abbr", "select", "acronym", "small", "bdi", "kbd", "strong", "big", "map", "sub", "sup", "br", "mark", "meter", "template", "cite", "object", "time", "code", "output", "u", "data", "picture", "tt", "datalist", "var", "dfn", "del", "q", "em", "s", "embed", "samp", "b"]);
-var blockElements = new Set(["body", "svg", "address", "fieldset", "li", "span", "article", "figcaption", "main", "aside", "figure", "nav", "blockquote", "footer", "ol", "details", "p", "dialog", "h1", "h2", "h3", "h4", "h5", "h6", "pre", "dd", "header", "section", "div", "hgroup", "table", "dl", "hr", "ul", "dt", "view", "view-block"]);
+var inlineElements = new Set([]);
+var blockElements = new Set([]);
 var specialElements = new Map([['slot', 'slot'], ['form', 'form'], ['iframe', 'web-view'], ['img', 'image'], ['audio', 'audio'], ['video', 'video'], ['canvas', 'canvas'], ['a', {
   mapName: function mapName(props) {
     return !props.href || /^javascript/.test(props.href) ? 'view' : 'navigator';
@@ -8441,7 +8441,7 @@ function equipCommonApis(taro, global) {
   !*** ./node_modules/@tarojs/taro/index.js ***!
   \********************************************/
 /*! no static exports found */
-/*! exports used: initPxTransform */
+/*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _require = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js"),

@@ -2270,6 +2270,11 @@
     "@vue/compiler-dom" "3.2.47"
     "@vue/shared" "3.2.47"
 
+"@vue/devtools-api@^6.5.0":
+  version "6.5.0"
+  resolved "http://172.18.66.66:31468/@vue/devtools-api/download/@vue/devtools-api-6.5.0.tgz#98b99425edee70b4c992692628fa1ea2c1e57d07"
+  integrity sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==
+
 "@vue/reactivity-transform@3.2.47":
   version "3.2.47"
   resolved "http://172.18.66.66:31468/@vue/reactivity-transform/download/@vue/reactivity-transform-3.2.47.tgz#e45df4d06370f8abf29081a16afd25cffba6d84e"
@@ -2974,6 +2979,13 @@ aws4@^1.8.0:
   version "1.12.0"
   resolved "http://172.18.66.66:31468/aws4/download/aws4-1.12.0.tgz#ce1c9d143389679e253b314241ea9aa5cec980d3"
   integrity sha512-NmWvPnx0F1SfrQbYwOi7OeaNGokp9XhzNioJ/CSBs8Qa4vxug81mhJEAVZwxXuBmYB5KDRfMq/F3RR0BIU7sWg==
+
+axios@0.19.2:
+  version "0.19.2"
+  resolved "http://172.18.66.66:31468/axios/download/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
+  dependencies:
+    follow-redirects "1.5.10"
 
 babel-code-frame@^6.26.0, babel-code-frame@^6.8.0:
   version "6.26.0"
@@ -5036,6 +5048,13 @@ debug@4.1.1:
   dependencies:
     ms "^2.1.1"
 
+debug@=3.1.0, debug@~3.1.0:
+  version "3.1.0"
+  resolved "http://172.18.66.66:31468/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.0.0, debug@^3.1.0, debug@^3.2.5, debug@^3.2.6, debug@^3.2.7:
   version "3.2.7"
   resolved "http://172.18.66.66:31468/debug/download/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -5049,13 +5068,6 @@ debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
-
-debug@~3.1.0:
-  version "3.1.0"
-  resolved "http://172.18.66.66:31468/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
-  dependencies:
-    ms "2.0.0"
 
 decamelize-keys@^1.0.0, decamelize-keys@^1.1.0:
   version "1.1.1"
@@ -6667,6 +6679,13 @@ flush-write-stream@^1.0.0, flush-write-stream@^1.0.2:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "http://172.18.66.66:31468/follow-redirects/download/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio=
+  dependencies:
+    debug "=3.1.0"
 
 follow-redirects@^1.0.0:
   version "1.15.2"
@@ -10748,6 +10767,14 @@ pify@^4.0.1:
   resolved "http://172.18.66.66:31468/pify/download/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE=
 
+pinia@^2.0.32:
+  version "2.0.32"
+  resolved "http://172.18.66.66:31468/pinia/download/pinia-2.0.32.tgz#93a12df4416566c1bb49225a078fe20b982350be"
+  integrity sha512-8Tw4OrpCSJ028UUyp0gYPP/wyjigLoEceuO/x1G+FlHVf73337e5vLm4uDmrRIoBG1hvaed/eSHnrCFjOc4nkA==
+  dependencies:
+    "@vue/devtools-api" "^6.5.0"
+    vue-demi "*"
+
 pinkie-promise@^2.0.0:
   version "2.0.1"
   resolved "http://172.18.66.66:31468/pinkie-promise/download/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
@@ -13349,6 +13376,13 @@ tar@^6.0.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
+taro-axios@^1.1.1:
+  version "1.1.1"
+  resolved "http://172.18.66.66:31468/taro-axios/download/taro-axios-1.1.1.tgz#93fae855cbbce8fc002180c5ee33a7731475ad1b"
+  integrity sha1-k/roVcu86PwAIYDF7jOncxR1rRs=
+  dependencies:
+    axios "0.19.2"
+
 taro-css-to-react-native@3.3.6:
   version "3.3.6"
   resolved "http://172.18.66.66:31468/taro-css-to-react-native/download/taro-css-to-react-native-3.3.6.tgz#eeb9636085057419e9215fddd612aeeaebfa8a4f"
@@ -13370,6 +13404,11 @@ taro-css-to-react-native@^2.0.4:
     css-color-keywords "^1.0.0"
     css-mediaquery "^0.1.2"
     postcss-value-parser "^3.3.0"
+
+taro-plugin-pinia@^1.0.0:
+  version "1.0.0"
+  resolved "http://172.18.66.66:31468/taro-plugin-pinia/download/taro-plugin-pinia-1.0.0.tgz#7dee620cc84303a4b4c2df50e649bae72c3b6ac0"
+  integrity sha512-Ip2LTRh7NGsFyEzkZWvU115xDqV3D8cRRbqqw0JKTvzHFBzpwycmrUVQQxV61AMg0r2RJm3mcEbQ997j7xNjtg==
 
 term-size@^1.2.0:
   version "1.2.0"
@@ -14276,6 +14315,11 @@ vm2@^3.8.4:
   dependencies:
     acorn "^8.7.0"
     acorn-walk "^8.2.0"
+
+vue-demi@*:
+  version "0.13.11"
+  resolved "http://172.18.66.66:31468/vue-demi/download/vue-demi-0.13.11.tgz#7d90369bdae8974d87b1973564ad390182410d99"
+  integrity sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==
 
 vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
   version "7.11.0"

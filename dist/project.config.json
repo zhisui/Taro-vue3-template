@@ -23,14 +23,14 @@
     "useStaticServer": true,
     "showES6CompileOption": false,
     "checkInvalidKey": true,
+    "compileHotReLoad": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
     "disableUseStrict": false,
-    "useCompilerPlugins": false,
-    "minifyWXML": true
+    "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
   "libVersion": "2.30.2",
