@@ -3628,10 +3628,10 @@ App.use(Object(pinia__WEBPACK_IMPORTED_MODULE_4__[/* createPinia */ "a"])());
   \*******************************************/
 /*! exports provided: MutationType, PiniaVuePlugin, acceptHMRUpdate, createPinia, defineStore, getActivePinia, mapActions, mapGetters, mapState, mapStores, mapWritableState, setActivePinia, setMapStoreSuffix, skipHydrate, storeToRefs */
 /*! exports used: createPinia */
-/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export MutationType */
+/* WEBPACK VAR INJECTION */(function(window, global, document, navigator, HTMLAnchorElement) {/* unused harmony export MutationType */
 /* unused harmony export PiniaVuePlugin */
 /* unused harmony export acceptHMRUpdate */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createPinia; });
@@ -3647,7 +3647,9 @@ App.use(Object(pinia__WEBPACK_IMPORTED_MODULE_4__[/* createPinia */ "a"])());
 /* unused harmony export skipHydrate */
 /* unused harmony export storeToRefs */
 /* harmony import */ var vue_demi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-demi */ "./node_modules/vue-demi/lib/index.cjs");
+/* harmony import */ var vue_demi__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_demi__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/devtools-api */ "./node_modules/@vue/devtools-api/lib/cjs/index.js");
+/* harmony import */ var _vue_devtools_api__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__);
 /*!
   * pinia v2.0.32
   * (c) 2023 Eduardo San Martin Morote
@@ -3671,7 +3673,7 @@ const setActivePinia = (pinia) => (activePinia = pinia);
 /**
  * Get the currently active pinia if there is any.
  */
-const getActivePinia = () => (/* non-default import from non-esm module */undefined() && /* non-default import from non-esm module */undefined(piniaSymbol)) || activePinia;
+const getActivePinia = () => (Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["getCurrentInstance"])() && Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["inject"])(piniaSymbol)) || activePinia;
 const piniaSymbol = (( true) ? Symbol('pinia') : /* istanbul ignore next */ undefined);
 
 function isPlainObject(
@@ -4153,7 +4155,7 @@ const getStoreType = (id) => '🍍 ' + id;
  * @param pinia - pinia instance
  */
 function registerPiniaDevtools(app, pinia) {
-    /* non-default import from non-esm module */undefined({
+    Object(_vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__["setupDevtoolsPlugin"])({
         id: 'dev.esm.pinia',
         label: 'Pinia 🍍',
         logo: 'https://pinia.vuejs.org/logo.svg',
@@ -4242,7 +4244,7 @@ function registerPiniaDevtools(app, pinia) {
                         value: store._isOptionsAPI
                             ? {
                                 _custom: {
-                                    value: /* non-default import from non-esm module */undefined(store.$state),
+                                    value: Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRaw"])(store.$state),
                                     actions: [
                                         {
                                             icon: 'restore',
@@ -4357,7 +4359,7 @@ function addStoreToDevtools(app, store) {
     if (!componentStateTypes.includes(getStoreType(store.$id))) {
         componentStateTypes.push(getStoreType(store.$id));
     }
-    /* non-default import from non-esm module */undefined({
+    Object(_vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__["setupDevtoolsPlugin"])({
         id: 'dev.esm.pinia',
         label: 'Pinia 🍍',
         logo: 'https://pinia.vuejs.org/logo.svg',
@@ -4435,7 +4437,7 @@ function addStoreToDevtools(app, store) {
             });
         }, true);
         store._customProperties.forEach((name) => {
-            /* non-default import from non-esm module */undefined(() => /* non-default import from non-esm module */undefined(store[name]), (newValue, oldValue) => {
+            Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["watch"])(() => Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["unref"])(store[name]), (newValue, oldValue) => {
                 api.notifyComponentUpdate();
                 api.sendInspectorState(INSPECTOR_ID);
                 if (isTimelineActive) {
@@ -4494,7 +4496,7 @@ function addStoreToDevtools(app, store) {
             });
         }, { detached: true, flush: 'sync' });
         const hotUpdate = store._hotUpdate;
-        store._hotUpdate = /* non-default import from non-esm module */undefined((newStore) => {
+        store._hotUpdate = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])((newStore) => {
             hotUpdate(newStore);
             api.addTimelineEvent({
                 layerId: MUTATIONS_LAYER_ID,
@@ -4544,7 +4546,7 @@ function patchActionForGrouping(store, actionNames) {
     // original actions of the store as they are given by pinia. We are going to override them
     const actions = actionNames.reduce((storeActions, actionName) => {
         // use toRaw to avoid tracking #541
-        storeActions[actionName] = /* non-default import from non-esm module */undefined(store)[actionName];
+        storeActions[actionName] = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRaw"])(store)[actionName];
         return storeActions;
     }, {});
     for (const actionName in actions) {
@@ -4586,7 +4588,7 @@ function devtoolsPlugin({ app, store, options }) {
         store, Object.keys(options.actions));
         const originalHotUpdate = store._hotUpdate;
         // Upgrade the HMR to also update the new actions
-        /* non-default import from non-esm module */undefined(store)._hotUpdate = function (newStore) {
+        Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRaw"])(store)._hotUpdate = function (newStore) {
             originalHotUpdate.apply(this, arguments);
             patchActionForGrouping(store, Object.keys(newStore._hmrPayload.actions));
         };
@@ -4600,19 +4602,19 @@ function devtoolsPlugin({ app, store, options }) {
  * Creates a Pinia instance to be used by the application
  */
 function createPinia() {
-    const scope = /* non-default import from non-esm module */undefined(true);
+    const scope = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["effectScope"])(true);
     // NOTE: here we could check the window object for a state and directly set it
     // if there is anything like it with Vue 3 SSR
-    const state = scope.run(() => /* non-default import from non-esm module */undefined({}));
+    const state = scope.run(() => Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["ref"])({}));
     let _p = [];
     // plugins added before calling app.use(pinia)
     let toBeInstalled = [];
-    const pinia = /* non-default import from non-esm module */undefined({
+    const pinia = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])({
         install(app) {
             // this allows calling useStore() outside of a component setup after
             // installing pinia's plugin
             setActivePinia(pinia);
-            if (!/* non-default import from non-esm module */undefined) {
+            if (!vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
                 pinia._a = app;
                 app.provide(piniaSymbol, pinia);
                 app.config.globalProperties.$pinia = pinia;
@@ -4625,7 +4627,7 @@ function createPinia() {
             }
         },
         use(plugin) {
-            if (!this._a && !/* non-default import from non-esm module */undefined) {
+            if (!this._a && !vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
                 toBeInstalled.push(plugin);
             }
             else {
@@ -4678,15 +4680,15 @@ function patchObject(newState, oldState) {
         const targetValue = newState[key];
         if (isPlainObject(targetValue) &&
             isPlainObject(subPatch) &&
-            !/* non-default import from non-esm module */undefined(subPatch) &&
-            !/* non-default import from non-esm module */undefined(subPatch)) {
+            !Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isRef"])(subPatch) &&
+            !Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isReactive"])(subPatch)) {
             newState[key] = patchObject(targetValue, subPatch);
         }
         else {
             // objects are either a bit more complex (e.g. refs) or primitives, so we
             // just set the whole thing
-            if (/* non-default import from non-esm module */undefined) {
-                /* non-default import from non-esm module */undefined(newState, key, subPatch);
+            if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(newState, key, subPatch);
             }
             else {
                 newState[key] = subPatch;
@@ -4753,8 +4755,8 @@ function addSubscription(subscriptions, callback, detached, onCleanup = noop) {
             onCleanup();
         }
     };
-    if (!detached && /* non-default import from non-esm module */undefined()) {
-        /* non-default import from non-esm module */undefined(removeSubscription);
+    if (!detached && Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["getCurrentScope"])()) {
+        Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["onScopeDispose"])(removeSubscription);
     }
     return removeSubscription;
 }
@@ -4782,8 +4784,8 @@ function mergeReactiveObjects(target, patchToApply) {
         if (isPlainObject(targetValue) &&
             isPlainObject(subPatch) &&
             target.hasOwnProperty(key) &&
-            !/* non-default import from non-esm module */undefined(subPatch) &&
-            !/* non-default import from non-esm module */undefined(subPatch)) {
+            !Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isRef"])(subPatch) &&
+            !Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isReactive"])(subPatch)) {
             // NOTE: here I wanted to warn about inconsistent types but it's not possible because in setup stores one might
             // start the value of a property as a certain type e.g. a Map, and then for some reason, during SSR, change that
             // to `undefined`. When trying to hydrate, we want to override the Map with `undefined`.
@@ -4808,7 +4810,7 @@ const skipHydrateMap = /*#__PURE__*/ new WeakMap();
  * @returns obj
  */
 function skipHydrate(obj) {
-    return /* non-default import from non-esm module */undefined
+    return vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]
         ? // in @vue/composition-api, the refs are sealed so defineProperty doesn't work...
             /* istanbul ignore next */ skipHydrateMap.set(obj, 1) && obj
         : Object.defineProperty(obj, skipHydrateSymbol, {});
@@ -4820,13 +4822,13 @@ function skipHydrate(obj) {
  * @returns true if `obj` should be hydrated
  */
 function shouldHydrate(obj) {
-    return /* non-default import from non-esm module */undefined
+    return vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]
         ? /* istanbul ignore next */ !skipHydrateMap.has(obj)
         : !isPlainObject(obj) || !obj.hasOwnProperty(skipHydrateSymbol);
 }
 const { assign } = Object;
 function isComputed(o) {
-    return !!(/* non-default import from non-esm module */undefined(o) && o.effect);
+    return !!(Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isRef"])(o) && o.effect);
 }
 function createOptionsStore(id, options, pinia, hot) {
     const { state, actions, getters } = options;
@@ -4835,8 +4837,8 @@ function createOptionsStore(id, options, pinia, hot) {
     function setup() {
         if (!initialState && ( false || !hot)) {
             /* istanbul ignore if */
-            if (/* non-default import from non-esm module */undefined) {
-                /* non-default import from non-esm module */undefined(pinia.state.value, id, state ? state() : {});
+            if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(pinia.state.value, id, state ? state() : {});
             }
             else {
                 pinia.state.value[id] = state ? state() : {};
@@ -4845,19 +4847,19 @@ function createOptionsStore(id, options, pinia, hot) {
         // avoid creating a state in pinia.state.value
         const localState = ( true) && hot
             ? // use ref() to unwrap refs inside state TODO: check if this is still necessary
-                /* non-default import from non-esm module */undefined(/* non-default import from non-esm module */undefined(state ? state() : {}).value)
-            : /* non-default import from non-esm module */undefined(pinia.state.value[id]);
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRefs"])(Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["ref"])(state ? state() : {}).value)
+            : Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRefs"])(pinia.state.value[id]);
         return assign(localState, actions, Object.keys(getters || {}).reduce((computedGetters, name) => {
             if (( true) && name in localState) {
                 console.warn(`[🍍]: A getter cannot have the same name as another state property. Rename one of them. Found with "${name}" in store "${id}".`);
             }
-            computedGetters[name] = /* non-default import from non-esm module */undefined(/* non-default import from non-esm module */undefined(() => {
+            computedGetters[name] = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])(Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["computed"])(() => {
                 setActivePinia(pinia);
                 // it was created just before
                 const store = pinia._s.get(id);
                 // allow cross using stores
                 /* istanbul ignore next */
-                if (/* non-default import from non-esm module */undefined && !store._r)
+                if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"] && !store._r)
                     return;
                 // @ts-expect-error
                 // return getters![name].call(context, context)
@@ -4890,7 +4892,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
         // flush: 'post',
     };
     /* istanbul ignore else */
-    if (( true) && !/* non-default import from non-esm module */undefined) {
+    if (( true) && !vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
         $subscribeOptions.onTrigger = (event) => {
             /* istanbul ignore else */
             if (isListening) {
@@ -4912,22 +4914,22 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
     // internal state
     let isListening; // set to true at the end
     let isSyncListening; // set to true at the end
-    let subscriptions = /* non-default import from non-esm module */undefined([]);
-    let actionSubscriptions = /* non-default import from non-esm module */undefined([]);
+    let subscriptions = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])([]);
+    let actionSubscriptions = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])([]);
     let debuggerEvents;
     const initialState = pinia.state.value[$id];
     // avoid setting the state for option stores if it is set
     // by the setup
     if (!isOptionsStore && !initialState && ( false || !hot)) {
         /* istanbul ignore if */
-        if (/* non-default import from non-esm module */undefined) {
-            /* non-default import from non-esm module */undefined(pinia.state.value, $id, {});
+        if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
+            Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(pinia.state.value, $id, {});
         }
         else {
             pinia.state.value[$id] = {};
         }
     }
-    const hotState = /* non-default import from non-esm module */undefined({});
+    const hotState = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["ref"])({});
     // avoid triggering too many listeners
     // https://github.com/vuejs/pinia/issues/1129
     let activeListener;
@@ -4957,7 +4959,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
             };
         }
         const myListenerId = (activeListener = Symbol());
-        /* non-default import from non-esm module */undefined().then(() => {
+        Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["nextTick"])().then(() => {
             if (activeListener === myListenerId) {
                 isListening = true;
             }
@@ -5030,7 +5032,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
             return ret;
         };
     }
-    const _hmrPayload = /*#__PURE__*/ /* non-default import from non-esm module */undefined({
+    const _hmrPayload = /*#__PURE__*/ Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])({
         actions: {},
         getters: {},
         state: [],
@@ -5045,7 +5047,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
         $reset,
         $subscribe(callback, options = {}) {
             const removeSubscription = addSubscription(subscriptions, callback, options.detached, () => stopWatcher());
-            const stopWatcher = scope.run(() => /* non-default import from non-esm module */undefined(() => pinia.state.value[$id], (state) => {
+            const stopWatcher = scope.run(() => Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["watch"])(() => pinia.state.value[$id], (state) => {
                 if (options.flush === 'sync' ? isSyncListening : isListening) {
                     callback({
                         storeId: $id,
@@ -5059,14 +5061,14 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
         $dispose,
     };
     /* istanbul ignore if */
-    if (/* non-default import from non-esm module */undefined) {
+    if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
         // start as non ready
         partialStore._r = false;
     }
-    const store = /* non-default import from non-esm module */undefined( true
+    const store = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["reactive"])( true
         ? assign({
             _hmrPayload,
-            _customProperties: /* non-default import from non-esm module */undefined(new Set()), // devtools custom properties
+            _customProperties: Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])(new Set()), // devtools custom properties
         }, partialStore
         // must be added later
         // setupStore
@@ -5077,23 +5079,23 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
     pinia._s.set($id, store);
     // TODO: idea create skipSerialize that marks properties as non serializable and they are skipped
     const setupStore = pinia._e.run(() => {
-        scope = /* non-default import from non-esm module */undefined();
+        scope = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["effectScope"])();
         return scope.run(() => setup());
     });
     // overwrite existing actions to support $onAction
     for (const key in setupStore) {
         const prop = setupStore[key];
-        if ((/* non-default import from non-esm module */undefined(prop) && !isComputed(prop)) || /* non-default import from non-esm module */undefined(prop)) {
+        if ((Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isRef"])(prop) && !isComputed(prop)) || Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isReactive"])(prop)) {
             // mark it as a piece of state to be serialized
             if (( true) && hot) {
-                /* non-default import from non-esm module */undefined(hotState.value, key, /* non-default import from non-esm module */undefined(setupStore, key));
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(hotState.value, key, Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRef"])(setupStore, key));
                 // createOptionStore directly sets the state in pinia.state.value so we
                 // can just skip that
             }
             else if (!isOptionsStore) {
                 // in setup stores we must hydrate the state and sync pinia state tree with the refs the user just created
                 if (initialState && shouldHydrate(prop)) {
-                    if (/* non-default import from non-esm module */undefined(prop)) {
+                    if (Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isRef"])(prop)) {
                         prop.value = initialState[key];
                     }
                     else {
@@ -5104,8 +5106,8 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
                 }
                 // transfer the ref to the pinia state to keep everything in sync
                 /* istanbul ignore if */
-                if (/* non-default import from non-esm module */undefined) {
-                    /* non-default import from non-esm module */undefined(pinia.state.value[$id], key, prop);
+                if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
+                    Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(pinia.state.value[$id], key, prop);
                 }
                 else {
                     pinia.state.value[$id][key] = prop;
@@ -5123,8 +5125,8 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
             // this a hot module replacement store because the hotUpdate method needs
             // to do it with the right context
             /* istanbul ignore if */
-            if (/* non-default import from non-esm module */undefined) {
-                /* non-default import from non-esm module */undefined(setupStore, key, actionValue);
+            if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(setupStore, key, actionValue);
             }
             else {
                 // @ts-expect-error
@@ -5148,7 +5150,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
                 if (IS_CLIENT) {
                     const getters = setupStore._getters ||
                         // @ts-expect-error: same
-                        (setupStore._getters = /* non-default import from non-esm module */undefined([]));
+                        (setupStore._getters = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])([]));
                     getters.push(key);
                 }
             }
@@ -5156,16 +5158,16 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
     }
     // add the state, getters, and action properties
     /* istanbul ignore if */
-    if (/* non-default import from non-esm module */undefined) {
+    if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
         Object.keys(setupStore).forEach((key) => {
-            /* non-default import from non-esm module */undefined(store, key, setupStore[key]);
+            Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(store, key, setupStore[key]);
         });
     }
     else {
         assign(store, setupStore);
         // allows retrieving reactive objects with `storeToRefs()`. Must be called after assigning to the reactive object.
         // Make `storeToRefs()` work with `reactive()` #799
-        assign(/* non-default import from non-esm module */undefined(store), setupStore);
+        assign(Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRaw"])(store), setupStore);
     }
     // use this instead of a computed with setter to be able to create it anywhere
     // without linking the computed lifespan to wherever the store is first
@@ -5185,7 +5187,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
     // add the hotUpdate before plugins to allow them to override it
     /* istanbul ignore else */
     if ((true)) {
-        store._hotUpdate = /* non-default import from non-esm module */undefined((newStore) => {
+        store._hotUpdate = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["markRaw"])((newStore) => {
             store._hotUpdating = true;
             newStore._hmrPayload.state.forEach((stateKey) => {
                 if (stateKey in store.$state) {
@@ -5203,48 +5205,48 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
                 }
                 // patch direct access properties to allow store.stateProperty to work as
                 // store.$state.stateProperty
-                /* non-default import from non-esm module */undefined(store, stateKey, /* non-default import from non-esm module */undefined(newStore.$state, stateKey));
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(store, stateKey, Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRef"])(newStore.$state, stateKey));
             });
             // remove deleted state properties
             Object.keys(store.$state).forEach((stateKey) => {
                 if (!(stateKey in newStore.$state)) {
-                    /* non-default import from non-esm module */undefined(store, stateKey);
+                    Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["del"])(store, stateKey);
                 }
             });
             // avoid devtools logging this as a mutation
             isListening = false;
             isSyncListening = false;
-            pinia.state.value[$id] = /* non-default import from non-esm module */undefined(newStore._hmrPayload, 'hotState');
+            pinia.state.value[$id] = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRef"])(newStore._hmrPayload, 'hotState');
             isSyncListening = true;
-            /* non-default import from non-esm module */undefined().then(() => {
+            Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["nextTick"])().then(() => {
                 isListening = true;
             });
             for (const actionName in newStore._hmrPayload.actions) {
                 const action = newStore[actionName];
-                /* non-default import from non-esm module */undefined(store, actionName, wrapAction(actionName, action));
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(store, actionName, wrapAction(actionName, action));
             }
             // TODO: does this work in both setup and option store?
             for (const getterName in newStore._hmrPayload.getters) {
                 const getter = newStore._hmrPayload.getters[getterName];
                 const getterValue = isOptionsStore
                     ? // special handling of options api
-                        /* non-default import from non-esm module */undefined(() => {
+                        Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["computed"])(() => {
                             setActivePinia(pinia);
                             return getter.call(store, store);
                         })
                     : getter;
-                /* non-default import from non-esm module */undefined(store, getterName, getterValue);
+                Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["set"])(store, getterName, getterValue);
             }
             // remove deleted getters
             Object.keys(store._hmrPayload.getters).forEach((key) => {
                 if (!(key in newStore._hmrPayload.getters)) {
-                    /* non-default import from non-esm module */undefined(store, key);
+                    Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["del"])(store, key);
                 }
             });
             // remove old actions
             Object.keys(store._hmrPayload.actions).forEach((key) => {
                 if (!(key in newStore._hmrPayload.actions)) {
-                    /* non-default import from non-esm module */undefined(store, key);
+                    Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["del"])(store, key);
                 }
             });
             // update the values used in devtools and to allow deleting new properties later on
@@ -5265,7 +5267,7 @@ function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) 
         });
     }
     /* istanbul ignore if */
-    if (/* non-default import from non-esm module */undefined) {
+    if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
         // mark the store as ready before plugins
         store._r = true;
     }
@@ -5326,12 +5328,12 @@ idOrOptions, setup, setupOptions) {
         id = idOrOptions.id;
     }
     function useStore(pinia, hot) {
-        const currentInstance = /* non-default import from non-esm module */undefined();
+        const currentInstance = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["getCurrentInstance"])();
         pinia =
             // in test mode, ignore the argument provided as we can always retrieve a
             // pinia instance with getActivePinia()
             ( false ? undefined : pinia) ||
-                (currentInstance && /* non-default import from non-esm module */undefined(piniaSymbol, null));
+                (currentInstance && Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["inject"])(piniaSymbol, null));
         if (pinia)
             setActivePinia(pinia);
         if (( true) && !activePinia) {
@@ -5545,20 +5547,20 @@ function mapWritableState(useStore, keysOrMapper) {
 function storeToRefs(store) {
     // See https://github.com/vuejs/pinia/issues/852
     // It's easier to just use toRefs() even if it includes more stuff
-    if (/* non-default import from non-esm module */undefined) {
+    if (vue_demi__WEBPACK_IMPORTED_MODULE_0__["isVue2"]) {
         // @ts-expect-error: toRefs include methods and others
-        return /* non-default import from non-esm module */undefined(store);
+        return Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRefs"])(store);
     }
     else {
-        store = /* non-default import from non-esm module */undefined(store);
+        store = Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRaw"])(store);
         const refs = {};
         for (const key in store) {
             const value = store[key];
-            if (/* non-default import from non-esm module */undefined(value) || /* non-default import from non-esm module */undefined(value)) {
+            if (Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isRef"])(value) || Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["isReactive"])(value)) {
                 // @ts-expect-error: the key is state or getter
                 refs[key] =
                     // ---
-                    /* non-default import from non-esm module */undefined(store, key);
+                    Object(vue_demi__WEBPACK_IMPORTED_MODULE_0__["toRef"])(store, key);
             }
         }
         return refs;
@@ -5633,6 +5635,30 @@ const PiniaVuePlugin = function (_Vue) {
 
 
 
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js")["window"], __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js")["document"], __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js")["navigator"], __webpack_require__(/*! ./node_modules/taro-plugin-pinia/dist/constructor.js */ "./node_modules/taro-plugin-pinia/dist/constructor.js")["HTMLAnchorElement"]))
+
+/***/ }),
+
+/***/ "./node_modules/taro-plugin-pinia/dist/constructor.js":
+/*!************************************************************!*\
+  !*** ./node_modules/taro-plugin-pinia/dist/constructor.js ***!
+  \************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.HTMLAnchorElement = void 0;
+function HTMLAnchorElement() {}
+exports.HTMLAnchorElement = HTMLAnchorElement;
+HTMLAnchorElement.prototype = Object.create({
+  download: true
+});
 
 /***/ }),
 

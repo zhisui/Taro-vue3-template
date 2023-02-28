@@ -4,3 +4,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+.container .box {
+  color: #a865c2;
+}

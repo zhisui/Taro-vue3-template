@@ -93,6 +93,7 @@ if (false) {}
     });
     var handleClick = function handleClick(type, msg) {
       var cover = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      console.log('执行没有');
       state.show = true;
       state.msg2 = msg;
       state.type = type;
@@ -129,18 +130,22 @@ if (false) {}
 var _hoisted_1 = {
   class: "index"
 };
-var _hoisted_2 = /*#__PURE__*/Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("view", null, [/*#__PURE__*/Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("img", {
-  src: "",
-  alt: ""
-})], -1 /* HOISTED */);
+var _hoisted_2 = /*#__PURE__*/Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("view", null, null, -1 /* HOISTED */);
 var _hoisted_3 = {
   class: "btn"
 };
+var _hoisted_4 = {
+  class: "container"
+};
+var _hoisted_5 = /*#__PURE__*/Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("div", {
+  class: "box"
+}, " test ", -1 /* HOISTED */);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_nut_button = Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* resolveComponent */ "Ib"])("nut-button");
   var _component_nut_toast = Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* resolveComponent */ "Ib"])("nut-toast");
   return Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* openBlock */ "wb"])(), Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementBlock */ "u"])("view", _hoisted_1, [_hoisted_2, Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createTextVNode */ "B"])(" " + Object(vue__WEBPACK_IMPORTED_MODULE_1__[/* toDisplayString */ "P"])($setup.state.msg) + " ", 1 /* TEXT */), Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("view", _hoisted_3, [Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createVNode */ "C"])(_component_nut_button, {
-    type: "primary",
+    type: "info",
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $setup.handleClick('text', $setup.state.msg2, true);
     })
@@ -149,7 +154,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createTextVNode */ "B"])("点我")];
     }),
     _: 1 /* STABLE */
-  })]), Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("div", null, [Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("button", {
+  })]), Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("div", _hoisted_4, [_hoisted_5, Object(vue__WEBPACK_IMPORTED_MODULE_0__[/* createElementVNode */ "v"])("button", {
     "open-type": "getPhoneNumber",
     onGetphonenumber: $setup.getPhoneNumber,
     class: "permission-button"

@@ -1,13 +1,15 @@
 <template>
     <view class="index">
         <view>
-            <img src="" alt="">
         </view>
         {{ state.msg }}
         <view class="btn">
-            <nut-button type="primary" @click="handleClick('text', state.msg2, true)">点我</nut-button>
+            <nut-button type="info" @click="handleClick('text', state.msg2, true)">点我</nut-button>
         </view>
-        <div>
+        <div class="container">
+            <div class="box">
+                test
+            </div>
             <button open-type="getPhoneNumber" @getphonenumber="getPhoneNumber" class="permission-button">获取用户信息</button>
         </div>
         <nut-toast :msg="state.msg" v-model:visible="state.show" :type="state.type" :cover="state.cover" />
@@ -41,6 +43,7 @@ onMounted(() => {
 })
 
 const handleClick = (type, msg, cover = false) => {
+    console.log('执行没有')
     state.show = true;
     state.msg2 = msg;
     state.type = type;
@@ -55,5 +58,11 @@ const handleClick = (type, msg, cover = false) => {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
+}
+
+.container {
+    .box {
+        color:$primary-color
+    }
 }
 </style>
